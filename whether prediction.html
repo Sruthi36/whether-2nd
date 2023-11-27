@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wether App</title>
+    <link rel="stylesheet" href="whether.css" class="css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <input id="input" type="text" placeholder="Enter your location" class="input-box">
+                <button id="searchBtn" class="fa-solid fa-magnifying-glass"></button>
+            </div>
+        </div>
+
+        <div id="locationNotFoumd" class="location-not-found">
+            <h1>Sorry, Location not found!!!</h1>
+            <img src="https://res.cloudinary.com/aniket-shinde/image/upload/v1691660577/404_rchwtx.png" alt="404 Error" />
+        </div>
+
+        <div id="weatherBody" class="weather-body">
+            <img id="weatherImage" src="https://res.cloudinary.com/aniket-shinde/image/upload/v1691660529/cloud_ehgsuk.png" alt="Weather Image" class="weather-img">
+            <div class="weather-box">
+                <p id="temperature" class="temperature">0<sup>°C</sup></p>
+                <p id="description" class="description">light rain</p>
+            </div>
+            <div class="weather-details">
+                <div class="humidity">
+                    <i id="humidityIcon" class="fa-sharp fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidty">0%</span>
+                        <p id="humidityDiscription">Humidity</p>
+
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="wind-speed">0km/H</span>
+                        <p id="windSpeedDiscription">wind-speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/54ba52c943.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
